@@ -1,6 +1,10 @@
 // Includes packages needed for this application
-const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
+const writeFileAsync = util.promisify(fs.writeFile);
+
 
 // Creates an array of questions for user input
 const promptUser = (questions => {
@@ -62,9 +66,9 @@ const promptUser = (questions => {
     },
 
     {
-      type: 'link',
-      name: 'github',
-      message: 'What is the github link to this project?'
+      type: 'input',
+      name: 'ghusername',
+      message: 'What is your github username?'
     },
 
     {
@@ -74,7 +78,12 @@ const promptUser = (questions => {
     }
   ]);
 }); 
-promptUser();
+promptUser()
+  .then
+  
+
+
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
