@@ -4,7 +4,7 @@ function generateReadme(answers) {
   
 # ${answers.title}
 
-  ![badge](https://img.shields.io/badge/license-${answers.license}-maroon)<br />
+![badge](https://img.shields.io/badge/license-${answers.license}-purple)<br />
 
 ## Description
 ${answers.description}
@@ -25,7 +25,7 @@ ${answers.description}
 
   ### License:
   This project is licensed under:<br />
-    <h3><span style="color: gold;">${answers.license}</span></h3>
+  ${answers.license}
 
   ### Contributing:
   ${answers.contributing}
@@ -37,7 +37,7 @@ ${answers.description}
   ${answers.questions}<br />
 
   This project was built using the following languages:<br />
-    <h3><span style="color: gold;">${answers.languages}</span></h2>  
+  ${answers.languages}  
   
   See all of my projects on my GitHub page: https://github.com/${answers.ghusername}
 

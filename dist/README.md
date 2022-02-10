@@ -2,10 +2,10 @@
   
 # README GENERATOR
 
-  ![badge](https://img.shields.io/badge/license- GNU-maroon)<br />
+![badge](https://img.shields.io/badge/license-MIT-purple)<br />
 
 ## Description
-This application is designed to accept a user's input (in the form of answered questions), and write that input to a provided README.md template.  The result is a quality README.md.
+This application accepts a user's input (in the form of answered questions), and writes that input to a provided README.md template. Then, a quality README.md is created.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -19,23 +19,23 @@ This application is designed to accept a user's input (in the form of answered q
   No installation required!
   
   ### Usage:
-  Open your computer's terminal.  Type: node index.js and answer the prompted questions.  When all questions have been answered, a "Success..." message will appear, revealing what folder your newly created README.md is located in. 
+  Open your computer's terminal and type "node index.js".  You will be prompted with a series of questions.  When all of the questions are answered, you will receive a "Success..." message, directing you to the folder where your newly created README.md exists.
 
   ### License:
   This project is licensed under:<br />
-    <h3><span style="color: gold;"> GNU</span></h3>
+  MIT
 
   ### Contributing:
-  Go to the project page in my github directory, and create a Pull Request.  Submit your ideas and/or contributions.  You will be contacted after the submission(s) are reviewed.
+  Visit my github page and navigate to this projects repository.  Create a Pull Request and submit any ideas and/or contributions.  Your submission will be reviewed and you will be contacted.
 
   ### Tests:
   
 
   ### Questions:
-  If you have any questions, feel free to email me.<br />
+  You may email me with any questions.<br />
 
   This project was built using the following languages:<br />
-    <h3><span style="color: gold;">HTML, CSS, JavaScript, jQuery, Node</span></h2>  
+  HTML, JavaScript, jQuery, Node  
   
   See all of my projects on my GitHub page: https://github.com/wlowrimore
 
