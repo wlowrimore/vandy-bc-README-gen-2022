@@ -2,12 +2,12 @@
 const fs = require('fs');
 const util = require('util');
 const inquirer = require('inquirer');
-const generateReadme = require('Develop/utils/generateReadme.js');
+const generateReadme = require('./utils/generateReadme.js');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
 // Creates an array of questions for user input
-const promptUser = (questions => {
+function promptUser() {
   return inquirer.prompt([
     {
       type: 'input',
@@ -37,14 +37,14 @@ const promptUser = (questions => {
       type: 'checkbox',
       name: 'languages',
       message: 'What language(s) did you use to create this project?',
-      choices: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'Node']
+      choices: ['HTML', ' CSS', ' Bootstrap', ' JavaScript', ' jQuery', ' Node']
     },
 
     {
       type: 'list',
       name: 'license',
       message: 'Choose the license you are using',
-      choices: ['MIT', 'Apache', 'Eclipse', 'none']
+      choices: ['MIT', ' Apache', ' Mozilla', ' GNU', ' Eclipse', ' none']
     },
 
     {
@@ -60,13 +60,19 @@ const promptUser = (questions => {
     },
 
     {
+      type: 'input',
+      name: 'questions',
+      message: 'What if I have questions?'
+    },
+
+    {
       type: 'imput',
       name: 'name',
       message: 'What is your name?'
     },
 
     {
-      type: 'input',
+      type: 'link',
       name: 'ghusername',
       message: 'What is your github username?'
     },
@@ -77,7 +83,7 @@ const promptUser = (questions => {
       message: 'What is your email address?'
     }
   ]);
-}); 
+}; 
 
 // Function to initialize app
 async function init() {
@@ -85,8 +91,8 @@ async function init() {
     const answers = await promptUser();
     const generateContent = generateReadme(answers);
     // write README.md
-    await writeFileAsync('./dist.README.md', generateContent);
-      console.log("Success!...You now have a README.md");
+    await writeFileAsync('./dist/README.md', generateContent);
+      console.log("Success!...Check your dist folder for your new README.md!");
   } catch(err) {
       console.log(err);
   }
@@ -94,6 +100,7 @@ async function init() {
 
 // Function call to initialize app
 init();
+
 
 
 

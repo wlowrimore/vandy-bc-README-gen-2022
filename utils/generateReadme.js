@@ -1,58 +1,51 @@
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
 // Generate README content
 function generateReadme(answers) {
   return `
   
-  ${answers.title}
+# ${answers.title}
 
-  ![badge](https://img.shields.io/badge/license-${answers.license}-purple)<br />
+  ![badge](https://img.shields.io/badge/license-${answers.license}-maroon)<br />
 
-  ## Description
-  ${answers.description}
+## Description
+${answers.description}
 
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-    ### Installation:
-    ${answers.installation}
-    
-    ### Usage:
-    ${answers.usage}
+  ### Installation:
+  ${answers.installation}
+  
+  ### Usage:
+  ${answers.usage}
 
-    ### License:
-    This project is licensed under:
-    ${answers.license}
+  ### License:
+  This project is licensed under:<br />
+    <h3><span style="color: gold;">${answers.license}</span></h3>
 
-    ### Contributing:
-    ${answers.contributing}
+  ### Contributing:
+  ${answers.contributing}
 
-    ### Tests
-    ${answers.tests}
+  ### Tests:
+  ${answers.tests}
 
-    ### Questions:
-    ${answers.questions}<br /><br />
-    
-    See all of my projects on my GitHub page: (https//github.com/${answers.ghusername})<br /><br />
+  ### Questions:
+  ${answers.questions}<br />
 
-    You can also email me at: ${answers.email}
+  This project was built using the following languages:<br />
+    <h3><span style="color: gold;">${answers.languages}</span></h2>  
+  
+  See all of my projects on my GitHub page: https://github.com/${answers.ghusername}
+
+  Contact me at my LinkedIn page: http://www.linkedin.com/in/william-lowrimore-21778310
+
+  You can also email me at: ${answers.email}
     `;
-};
+  };
 
 
-module.exports = generateReadme;
+  module.exports = generateReadme;
