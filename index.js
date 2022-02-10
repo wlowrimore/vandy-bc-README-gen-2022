@@ -2,7 +2,7 @@
 const fs = require('fs');
 const util = require('util');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./Develop/utils/generateMarkdown');
+const generateReadme = require('Develop/utils/generateReadme.js');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -78,21 +78,30 @@ const promptUser = (questions => {
     }
   ]);
 }); 
-promptUser()
-  .then
-  
 
-
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
+// Function to initialize app
+async function init() {
+  try {
+    const answers = await promptUser();
+    const generateContent = generateReadme(answers);
+    // write README.md
+    await writeFileAsync('./dist.README.md', generateContent);
+      console.log("Success!...You now have a README.md");
+  } catch(err) {
+      console.log(err);
+  }
+}
 
 // Function call to initialize app
 init();
+
+
+
+
+
+
+
+
 
 
 
