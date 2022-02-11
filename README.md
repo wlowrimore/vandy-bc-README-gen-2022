@@ -2,7 +2,7 @@
 
 ## Discription
 
-This challenge was a lot of fun for me.  I learned a lot about node.js and really enjoyed (what was frightening at first) working from the terminal.  I relied heavily on module 9 and set up camp on the NPM and MDN websites.  I reached out to some resources who helped me understand the power and simplicity of async / await functions.  I implemented this style in the "initialize function", and found it to be quite clean and efficient.  I used straight-forward questioning that focused on important details expected in a professional README.md. JavaScript, jQuery and Node.js were used to create my README Generator.  When this application is initialized, the user is presented with a list of questions that were created with npm "inquirer".  After answering all questions, a README.md is generated from a template that was created using JavaScript.
+Creating this application was a lot of fun for me.  I learned a lot about node.js and really enjoyed (what was frightening at first) working from the terminal.  I relied heavily on module 9 and set up camp on the NPM and MDN websites.  I reached out to some resources who helped me understand the power and simplicity of async / await functions.  I implemented this style in the "initialize function", and found it to be quite clean and efficient.  I used straight-forward questioning that focused on important details expected in a professional README.md. JavaScript, jQuery and Node.js were used to create my README Generator.  When this application is initialized, the user is presented with a list of questions that were created with npm "inquirer".  After answering all questions, a README.md is generated from a template that was created using JavaScript.
 
 ## Usage
 
