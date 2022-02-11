@@ -28,7 +28,7 @@ function promptUser() {
     },
     
     { 
-      type: 'input',
+      type: 'link',
       name: 'usage',
       message: 'Please provide instructions and examples for use.  You may include screenshots.'
     },
