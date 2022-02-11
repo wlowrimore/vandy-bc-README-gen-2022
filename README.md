@@ -12,8 +12,8 @@ To use this application, simply launch the computer's terminal, type "node index
 
 <img src= "src\assets\images\terminal-rdme.jpg" alt= "README.md Terminal Questions Example"></img>
 
-<a href= "https://github.com/wlowrimore/vandy-bc-readme-gen-2022" targe= "_blank" rel= "noreferrer">View this project on GitHub</a>
+<a href= "https://github.com/wlowrimore/vandy-bc-readme-gen-2022" target= "_blank" rel= "noreferrer">View this project on GitHub</a>
 
-<a href= ">
+<br /><br />
 
 <h5 style="color: gold;">Created By William Lowrimore</h5>
